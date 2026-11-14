@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge B2 First • Paper 1: Reading & Use of English | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #1e3a8a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-gold: #d97706;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --success: #059669;
+      --error: #dc2626;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image:
+        linear-gradient(rgba(15, 45, 95, 0.58), rgba(10, 32, 70, 0.68)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    /* INSTITUTIONAL HEADER */
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 52px; width: auto; object-fit: contain; }
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 72px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .header-center-cluster { display: flex; align-items: center; gap: 12px; }
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      border: 2.5px solid #3b82f6;
+      color: #93c5fd;
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-avatar-lg {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 12px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    /* STEPPER NAV */
+    .stepper-nav {
+      max-width: 1400px;
+      width: 96%;
+      margin: 18px auto 6px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(6, 21, 45, 0.92);
+      border: 2px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 12px 18px;
+      gap: 8px;
+      overflow-x: auto;
+    }
+    .step-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: #cbd5e1;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      white-space: nowrap;
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      transition: all 0.2s;
+    }
+    .step-pill.active {
+      color: #ffffff;
+      background: #2563eb;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+    }
+    .step-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .step-pill.active .step-badge {
+      background: #ffffff;
+      color: #1d4ed8;
+    }
+
+    main.exam-viewport {
+      flex: 1;
+      max-width: 1400px;
+      width: 96%;
+      margin: 14px auto 34px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .stage-section { display: none; }
+    .stage-section.active { display: block; }
+
+    .cambridge-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 34px 38px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .part-tag-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .part-title-tag {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+    .part-score-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+    }
+    .instruction-callout {
+      background: #eff6ff;
+      border-left: 6px solid #2563eb;
+      padding: 14px 20px;
+      border-radius: 0 10px 10px 0;
+      font-size: 16px;
+      color: #1e293b;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .passage-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 23px;
+      font-weight: 900;
+      color: #0b1a30;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .passage-body {
+      font-size: 17.5px;
+      line-height: 2.1;
+      color: #0f172a;
+      text-align: justify;
+    }
+    .passage-paragraph {
+      margin-bottom: 18px;
+      text-indent: 1.4em;
+    }
+
+    .parallel-split-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: start;
+    }
+    @media (max-width: 1080px) {
+      .parallel-split-grid { grid-template-columns: 1fr; }
+    }
+    .split-col-reading {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 26px 28px;
+    }
+    .split-col-questions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .gap-select {
+      background: #ffffff;
+      color: #1d4ed8;
+      border: 2px solid #2563eb;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 800;
+      outline: none;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+
+    .gap-input {
+      background: #ffffff;
+      color: #0f172a;
+      border: 2px solid #2563eb;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      outline: none;
+      width: 175px;
+      text-align: center;
+      margin: 0 4px;
+    }
+
+    .p3-root {
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      color: #92400e;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 900;
+      padding: 3px 9px;
+      border-radius: 6px;
+      margin-left: 4px;
+    }
+
+    .p4-box {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 18px;
+    }
+    .p4-original { font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 10px; }
+    .p4-key {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14.5px;
+      font-weight: 900;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      padding: 3px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .p4-completion {
+      font-size: 17px;
+      font-weight: 600;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .p4-input {
+      background: #ffffff;
+      border: 2px solid #2563eb;
+      color: #0f172a;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 8px;
+      min-width: 340px;
+      flex-grow: 1;
+      text-transform: uppercase;
+      outline: none;
+    }
+
+    .q-item-side {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .q-question-header {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 15.5px;
+      font-weight: 500;
+      color: #0f172a;
+      transition: all 0.18s;
+    }
+    .radio-option:hover { border-color: #2563eb; background: #eff6ff; }
+    .radio-option input[type="radio"] { width: 18px; height: 18px; accent-color: #1d4ed8; }
+
+    .gapped-sentence-card {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .sentence-letter-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 900;
+      color: #ffffff;
+      background: #1d4ed8;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .sentence-text { font-size: 15.5px; line-height: 1.55; color: #0f172a; font-weight: 500; }
+
+    .profile-card-p7 {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-left: 6px solid #2563eb;
+      padding: 18px 20px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+    .profile-card-p7 h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #0b1a30;
+      margin-bottom: 6px;
+    }
+    .profile-card-p7 p {
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: #1e293b;
+      text-align: justify;
+    }
+
+    /* CONTROLS ROW */
+    .controls-bar {
+      background: #ffffff;
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 20px 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-act {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16.5px;
+      font-weight: 900;
+      padding: 14px 30px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-prev { background: #f1f5f9; border-color: #cbd5e1; color: #1e293b; }
+    .btn-prev:hover { background: #e2e8f0; }
+    .btn-next {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      border-color: #bfdbfe;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    }
+    .btn-submit-final {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      border-color: #6ee7b7;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    /* MODAL */
+    .modal-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(10px);
+      display: none;
+      place-items: center;
+      z-index: 500;
+      padding: 20px;
+    }
+    .modal-veil.active { display: grid; }
+    .modal-box {
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      border-radius: var(--radius-lg);
+      max-width: 960px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      padding: 34px 40px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+    }
+    .status-verdict-banner {
+      border-radius: 14px;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .status-verdict-banner.passed { background: #ecfdf5; border: 2px solid #10b981; }
+    .status-verdict-banner.failed { background: #fef2f2; border: 2px solid #ef4444; }
+    .scorecard-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 5px;
+      margin: 12px 0 18px 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    .scorecard-table th {
+      background: #1d4ed8;
+      color: #ffffff;
+      padding: 10px 8px;
+      font-size: 13.5px;
+      font-weight: 800;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .scorecard-table td {
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 12px 8px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+    .item-feedback-card {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-left: 5px solid #2563eb;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 42px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INSTITUTIONAL HEADER -->
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center-cluster">
+      <div class="timer-pill"><span>⏱️</span><span id="readingTimer">75:00</span></div>
+    </div>
+
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu"><span>🏠</span> Return to Main Menu</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <div class="stepper-nav">
+    <div class="step-pill active" id="pill1" onclick="switchStage(1)"><div class="step-badge">1</div><span>Part 1 (MC Cloze)</span></div>
+    <div class="step-pill" id="pill2" onclick="switchStage(2)"><div class="step-badge">2</div><span>Part 2 (Open Cloze)</span></div>
+    <div class="step-pill" id="pill3" onclick="switchStage(3)"><div class="step-badge">3</div><span>Part 3 (Word Formation)</span></div>
+    <div class="step-pill" id="pill4" onclick="switchStage(4)"><div class="step-badge">4</div><span>Part 4 (Transformations)</span></div>
+    <div class="step-pill" id="pill5" onclick="switchStage(5)"><div class="step-badge">5</div><span>Part 5 (Reading MC)</span></div>
+    <div class="step-pill" id="pill6" onclick="switchStage(6)"><div class="step-badge">6</div><span>Part 6 (Gapped Text)</span></div>
+    <div class="step-pill" id="pill7" onclick="switchStage(7)"><div class="step-badge">7</div><span>Part 7 (Matching)</span></div>
+  </div>
+
+  <!-- VIEWPORT -->
+  <main class="exam-viewport">
+
+    <!-- PART 1 -->
+    <section class="stage-section active" id="stage1">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 1 • Multiple-Choice Cloze (Questions 1–8)</span>
+          <span class="part-score-badge">8 Marks</span>
+        </div>
+        <div class="instruction-callout">
+          For questions <strong>1–8</strong>, read the passage below and select the word (<strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>) that best completes each gap.
+        </div>
+        <h3 class="passage-title">Understanding Everyday Coincidences</h3>
+        <div class="passage-body">
+          <p class="passage-paragraph">
+            A coincidence is generally considered a remarkable convergence of events without apparent causal connection. For instance, two friends might independently purchase identical garments without prior coordination. Many individuals 
+            <strong>(1)</strong>
+            <select class="gap-select" id="q1"><option value="">[1]...</option><option value="A">A) regard</option><option value="B">B) think</option><option value="C">C) consider</option><option value="D">D) believe</option></select>
+            such occurrences as profoundly mysterious. However, a plausible 
+            <strong>(2)</strong>
+            <select class="gap-select" id="q2"><option value="">[2]...</option><option value="A">A) explanation</option><option value="B">B) definition</option><option value="C">C) motivation</option><option value="D">D) resolution</option></select>
+            lies in shared socio-cultural preferences.
+          </p>
+          <p class="passage-paragraph">
+            In reality, daily existence is 
+            <strong>(3)</strong>
+            <select class="gap-select" id="q3"><option value="">[3]...</option><option value="A">A) heavy</option><option value="B">B) rich</option><option value="C">C) full</option><option value="D">D) crowded</option></select>
+            of mathematical probabilities that pass entirely unremarked. In sporting fixtures, the likelihood of two participants sharing a birthday is extraordinarily high, 
+            <strong>(4)</strong>
+            <select class="gap-select" id="q4"><option value="">[4]...</option><option value="A">A) given</option><option value="B">B) except</option><option value="C">C) even</option><option value="D">D) instead</option></select>
+            the distribution across 365 calendar days. Nonetheless, spectators and players remain largely 
+            <strong>(5)</strong>
+            <select class="gap-select" id="q5"><option value="">[5]...</option><option value="A">A) noticed</option><option value="B">B) known</option><option value="C">C) aware</option><option value="D">D) intelligent</option></select>
+            of this statistical reality.
+          </p>
+          <p class="passage-paragraph">
+            <strong>(6)</strong>
+            <select class="gap-select" id="q6"><option value="">[6]...</option><option value="A">A) Therefore</option><option value="B">B) Whereas</option><option value="C">C) Meanwhile</option><option value="D">D) Unless</option></select>
+            prompted by a specific anniversary, people rarely disclose birthdates casually. Consequently, one can easily 
+            <strong>(7)</strong>
+            <select class="gap-select" id="q7"><option value="">[7]...</option><option value="A">A) make</option><option value="B">B) come</option><option value="C">C) have</option><option value="D">D) go</option></select>
+            into routine contact with peers sharing identical dates. When such an occurrence is explicitly 
+            <strong>(8)</strong>
+            <select class="gap-select" id="q8"><option value="">[8]...</option><option value="A">A) taken</option><option value="B">B) carried</option><option value="C">C) brought</option><option value="D">D) shown</option></select>
+            to attention, our cognitive bias perceives it as extraordinary.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 2 -->
+    <section class="stage-section" id="stage2">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 2 • Open Cloze (Questions 9–16)</span>
+          <span class="part-score-badge">8 Marks</span>
+        </div>
+        <div class="instruction-callout">
+          For questions <strong>9–16</strong>, complete the gaps with <strong>only one word</strong>. Write your answers in <strong>CAPITAL LETTERS</strong>.
+        </div>
+        <h3 class="passage-title">Community Recycling Innovators</h3>
+        <div class="passage-body">
+          <p class="passage-paragraph">
+            Grassroots initiatives are essential in addressing climate challenges. Two young innovators in the UK recently earned recognition for environmental commitment. Operating under an energetic initiative, they cycle 
+            <strong>(9)</strong> <input type="text" class="gap-input" id="q9" placeholder="[ 9 ]" autocomplete="off">
+            their community collecting recyclable domestic materials. In regions 
+            <strong>(10)</strong> <input type="text" class="gap-input" id="q10" placeholder="[ 10 ]" autocomplete="off">
+            municipal recycling remains restricted, they assist neighbours to process materials, receiving donations in 
+            <strong>(11)</strong> <input type="text" class="gap-input" id="q11" placeholder="[ 11 ]" autocomplete="off">
+            for weekly collections.
+          </p>
+          <p class="passage-paragraph">
+            The project began several years 
+            <strong>(12)</strong> <input type="text" class="gap-input" id="q12" placeholder="[ 12 ]" autocomplete="off">
+            as modest weekend work. Today, operations encompass organic poultry, having invested 
+            <strong>(13)</strong> <input type="text" class="gap-input" id="q13" placeholder="[ 13 ]" autocomplete="off">
+            sustainable micro-farming. They distribute fresh produce 
+            <strong>(14)</strong> <input type="text" class="gap-input" id="q14" placeholder="[ 14 ]" autocomplete="off">
+            completing collection rounds across local streets.
+          </p>
+          <p class="passage-paragraph">
+            The committee responsible for the environmental distinction, 
+            <strong>(15)</strong> <input type="text" class="gap-input" id="q15" placeholder="[ 15 ]" autocomplete="off">
+            the youngsters secured, praised their diligence, stating that their practical model proved both responsible and scalable at the 
+            <strong>(16)</strong> <input type="text" class="gap-input" id="q16" placeholder="[ 16 ]" autocomplete="off">
+            time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="stage-section" id="stage3">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 3 • Word Formation (Questions 17–24)</span>
+          <span class="part-score-badge">8 Marks</span>
+        </div>
+        <div class="instruction-callout">
+          For questions <strong>17–24</strong>, use the prompt word in capitals to form an appropriate word that fits each gap. Write in <strong>CAPITAL LETTERS</strong>.
+        </div>
+        <h3 class="passage-title">The Transformation of Clean Energy</h3>
+        <div class="passage-body">
+          <p class="passage-paragraph">
+            The shift toward renewable power sources demands exceptional technological ambition. Contemporary wind and solar arrays exhibit superior operational 
+            <strong>(17)</strong> <input type="text" class="gap-input" id="q17" placeholder="[ 17 ]" autocomplete="off"><span class="p3-root">PERFORM</span>
+            relative to twentieth-century models. Modern storage systems mitigate atmospheric 
+            <strong>(18)</strong> <input type="text" class="gap-input" id="q18" placeholder="[ 18 ]" autocomplete="off"><span class="p3-root">VARIABLE</span>,
+            ensuring that national grids operate with total 
+            <strong>(19)</strong> <input type="text" class="gap-input" id="q19" placeholder="[ 19 ]" autocomplete="off"><span class="p3-root">DEPEND</span>.
+          </p>
+          <p class="passage-paragraph">
+            Aerodynamic engineering now maintains generator noise 
+            <strong>(20)</strong> <input type="text" class="gap-input" id="q20" placeholder="[ 20 ]" autocomplete="off"><span class="p3-root">NOTICE</span>
+            below urban disruption thresholds. Concurrently, government incentives foster vigorous industrial 
+            <strong>(21)</strong> <input type="text" class="gap-input" id="q21" placeholder="[ 21 ]" autocomplete="off"><span class="p3-root">GROW</span>
+            across domestic supply chains.
+          </p>
+          <p class="passage-paragraph">
+            Climatologists highlight the urgent 
+            <strong>(22)</strong> <input type="text" class="gap-input" id="q22" placeholder="[ 22 ]" autocomplete="off"><span class="p3-root">NECESSARY</span>
+            of decarbonization. While capital requirements appear 
+            <strong>(23)</strong> <input type="text" class="gap-input" id="q23" placeholder="[ 23 ]" autocomplete="off"><span class="p3-root">CONSIDER</span>,
+            transitioning to sustainable generation guarantees a more 
+            <strong>(24)</strong> <input type="text" class="gap-input" id="q24" placeholder="[ 24 ]" autocomplete="off"><span class="p3-root">PROSPER</span>
+            economic future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 4 -->
+    <section class="stage-section" id="stage4">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 4 • Key Word Transformation (Questions 25–30)</span>
+          <span class="part-score-badge">12 Marks (0, 1 or 2 pts each)</span>
+        </div>
+        <div class="instruction-callout">
+          Complete the second sentence using between <strong>two and five words</strong>, including the word given. <strong>Do not change the word given</strong>.
+        </div>
+
+        <div class="p4-box"><p class="p4-original">I'm certain Rebecca had no knowledge of the rescheduled seminar.</p><span class="p4-key">CAN'T</span><div class="p4-completion">25. Rebecca <input type="text" class="p4-input" id="q25" placeholder="between 2 and 5 words" autocomplete="off"> about the rescheduled seminar.</div></div>
+        <div class="p4-box"><p class="p4-original">I feel disappointed that I didn't consult the tutor before submitting.</p><span class="p4-key">WISH</span><div class="p4-completion">26. I <input type="text" class="p4-input" id="q26" placeholder="between 2 and 5 words" autocomplete="off"> the tutor before submitting.</div></div>
+        <div class="p4-box"><p class="p4-original">Historians believe the cathedral foundations date from the tenth century.</p><span class="p4-key">THOUGHT</span><div class="p4-completion">27. The cathedral foundations <input type="text" class="p4-input" id="q27" placeholder="between 2 and 5 words" autocomplete="off"> from the tenth century.</div></div>
+        <div class="p4-box"><p class="p4-original">The snowstorm was so severe that transportation halted across the region.</p><span class="p4-key">SUCH</span><div class="p4-completion">28. It was <input type="text" class="p4-input" id="q28" placeholder="between 2 and 5 words" autocomplete="off"> that transportation halted across the region.</div></div>
+        <div class="p4-box"><p class="p4-original">An expert craftsman is restoring grandfather's antique barometer.</p><span class="p4-key">HAVING</span><div class="p4-completion">29. Grandfather is <input type="text" class="p4-input" id="q29" placeholder="between 2 and 5 words" autocomplete="off"> by an expert craftsman.</div></div>
+        <div class="p4-box"><p class="p4-original">You may access the digital library on the condition that you complete registration.</p><span class="p4-key">LONG</span><div class="p4-completion">30. You may access the digital library as <input type="text" class="p4-input" id="q30" placeholder="between 2 and 5 words" autocomplete="off"> complete registration.</div></div>
+      </div>
+    </section>
+
+    <!-- PART 5 -->
+    <section class="stage-section" id="stage5">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 5 • Multiple Choice Reading (Questions 31–36)</span>
+          <span class="part-score-badge">12 Marks (2 marks each)</span>
+        </div>
+        <div class="instruction-callout">
+          Read the following text on higher education routes. In the column on the right, answer questions <strong>31–36</strong> by selecting <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.
+        </div>
+
+        <div class="parallel-split-grid">
+          <div class="split-col-reading">
+            <h3 class="passage-title">Pathways in Distance Higher Education</h3>
+            <div class="passage-body">
+              <p class="passage-paragraph">Pursuing a university qualification remotely has transformed conventional perceptions of higher education. Rather than undertaking relocation to a traditional campus, nineteenth-month legal student Jamie elected to remain in his domestic setting, primarily motivated by escalating undergraduate tuition costs and a firm determination to prevent substantial post-graduation debt accumulation.</p>
+              <p class="passage-paragraph">This deliberate pedagogical choice enabled simultaneous workplace integration. By structuring modular study commitments around flexible hours, practical experience was acquired alongside accredited legal studies, ultimately securing an early professional placement before final degree completion.</p>
+              <p class="passage-paragraph">Similarly, Business undergraduate Jonathan incorporated remote degree study while continuing full-time vocational responsibilities in public administration. Having established career momentum through practical apprenticeships, sacrificing occupational progression and financial autonomy to enroll in campus-based lectures held minimal personal appeal.</p>
+              <p class="passage-paragraph">Naturally, remote modalities entail distinct structural adjustments. The spontaneous intellectual interchange characteristic of physical lecture halls is largely replaced by digital interfaces. Jamie acknowledges that studying without a physical cohort requires self-reliance, noting that consulting <strong>his peers</strong> directly during difficulties is less immediate than on campus, although specialized employment mentors provided valuable supplementary guidance.</p>
+              <p class="passage-paragraph">Academic directors emphasize that autonomous study formats demand intense personal discipline and transparent vocational goals. Dr Philip Hallam observes that distance qualifications necessitate rigorous time management and sustained determination rather than representing a convenient shortcut.</p>
+              <p class="passage-paragraph">Reflecting upon contemporary secondary school guidance, Jonathan contends that educational authorities must actively publicize alternative vocational and remote degree trajectories, ensuring emerging school leavers understand diverse credentials beyond residential university programs.</p>
+            </div>
+          </div>
+
+          <div class="split-col-questions">
+            <div class="q-item-side"><div class="q-question-header">31. What was Jamie's primary incentive for undertaking remote university study?</div><label class="radio-option"><input type="radio" name="q31" value="A"> A) His peers had already chosen remote higher education programs.</label><label class="radio-option"><input type="radio" name="q31" value="B"> B) He had received an immediate corporate appointment beforehand.</label><label class="radio-option"><input type="radio" name="q31" value="C"> C) A decisive desire to prevent substantial educational debt liabilities.</label><label class="radio-option"><input type="radio" name="q31" value="D"> D) He was denied admission to traditional university degree tracks.</label></div>
+            <div class="q-item-side"><div class="q-question-header">32. Jonathan opted for home-based degree study because</div><label class="radio-option"><input type="radio" name="q32" value="A"> A) he intended to preserve his professional role and career momentum.</label><label class="radio-option"><input type="radio" name="q32" value="B"> B) his current workplace role offered inadequate remuneration.</label><label class="radio-option"><input type="radio" name="q32" value="C"> C) his preferred academic discipline was unavailable at university.</label><label class="radio-option"><input type="radio" name="q32" value="D"> D) the formal university admissions timetable had closed.</label></div>
+            <div class="q-item-side"><div class="q-question-header">33. In the text, the phrase 'his peers' refers specifically to</div><label class="radio-option"><input type="radio" name="q33" value="A"> A) university administrative and tutorial staff.</label><label class="radio-option"><input type="radio" name="q33" value="B"> B) graduates who completed similar degree examinations.</label><label class="radio-option"><input type="radio" name="q33" value="C"> C) corporate executives supervising his work experience.</label><label class="radio-option"><input type="radio" name="q33" value="D"> D) fellow students sharing comparable academic standing.</label></div>
+            <div class="q-item-side"><div class="q-question-header">34. In Jamie's view, completing studies from home significantly helped him to</div><label class="radio-option"><input type="radio" name="q34" value="A"> A) collaborate with students following identical subject schedules.</label><label class="radio-option"><input type="radio" name="q34" value="B"> B) strengthen his professional competence and career employability.</label><label class="radio-option"><input type="radio" name="q34" value="C"> C) build a wider social circle than campus residence would provide.</label><label class="radio-option"><input type="radio" name="q34" value="D"> D) eliminate non-academic social interaction altogether.</label></div>
+            <div class="q-item-side"><div class="q-question-header">35. Dr Hallam stresses that distance education suits individuals who</div><label class="radio-option"><input type="radio" name="q35" value="A"> A) prefer avoiding intensive study commitments.</label><label class="radio-option"><input type="radio" name="q35" value="B"> B) possess very constrained study timetables.</label><label class="radio-option"><input type="radio" name="q35" value="C"> C) lack sufficient funding for university textbooks.</label><label class="radio-option"><input type="radio" name="q35" value="D"> D) possess a comprehensive understanding of the demands involved.</label></div>
+            <div class="q-item-side"><div class="q-question-header">36. In the final paragraph, Jonathan recommends that young people ought to</div><label class="radio-option"><input type="radio" name="q36" value="A"> A) be discouraged from pursuing standard higher education degrees.</label><label class="radio-option"><input type="radio" name="q36" value="B"> B) receive clearer orientation regarding available non-traditional pathways.</label><label class="radio-option"><input type="radio" name="q36" value="C"> C) seek employment solely with municipal administrative bodies.</label><label class="radio-option"><input type="radio" name="q36" value="D"> D) prioritize secondary academic scores above career planning.</label></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 6 -->
+    <section class="stage-section" id="stage6">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 6 • Gapped Text (Questions 37–42)</span>
+          <span class="part-score-badge">12 Marks (2 marks each)</span>
+        </div>
+        <div class="instruction-callout">
+          Six sentences have been removed from the article on the left. Choose from sentences <strong>A–G</strong> on the right the one that best fits each gap (<strong>37–42</strong>).
+        </div>
+
+        <div class="parallel-split-grid">
+          <div class="split-col-reading">
+            <h3 class="passage-title">Managing the Unconscious: Dream Regulation</h3>
+            <div class="passage-body">
+              <p class="passage-paragraph">The degree to which individuals can deliberately shape nighttime mental activity remains a captivating question in modern cognitive science. Clinical psychologists observe that using structured cognitive priming techniques prior to sleep enables individuals to access unconscious problem-solving capacities.</p>
+              <p class="passage-paragraph">Dr Deirdre Barrett suggests that deliberate mental focus upon retiring sets receptive cognitive conditions for thematic dreams.<br><strong>[ GAP 37: <select class="gap-select" id="q37"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Placing a tangible visual prompt or photographic reminder beside the bed reinforces this subconscious intention.</p>
+              <p class="passage-paragraph">Equally vital is resisting the impulse to rise immediately upon waking.<br><strong>[ GAP 38: <select class="gap-select" id="q38"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Remaining motionless for several moments often allows fading memory traces to re-emerge into conscious awareness.</p>
+              <p class="passage-paragraph">Psychologists calculate that unconscious cognitive processing vastly outweighs conscious mental throughput. While analytical contemplation is effective, waking attention represents only a fraction of total mental power.<br><strong>[ GAP 39: <select class="gap-select" id="q39"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Allowing non-linear unconscious associations to operate overnight can provide novel resolutions to complex impasses.</p>
+              <p class="passage-paragraph">This premise was verified through structured university trials where participants utilized dreaming to target unresolved intellectual tasks.<br><strong>[ GAP 40: <select class="gap-select" id="q40"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Dreams offer lateral perspectives unconstrained by conventional linear logic, enriching waking analysis.</p>
+              <p class="passage-paragraph">While most nocturnal imagery is benign, persistent nightmares can provoke acute distress, especially among younger family members.<br><strong>[ GAP 41: <select class="gap-select" id="q41"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Developmental counsellors note that recurring childhood anxiety dreams frequently accompany emerging awareness of an expansive outside world.</p>
+              <p class="passage-paragraph">In adulthood, disturbing themes frequently signal underlying unresolved stressors rather than arbitrary mental noise.<br><strong>[ GAP 42: <select class="gap-select" id="q42"><option value="">-- Choose --</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select> ]</strong><br>Recognizing these nocturnal indicators affords valuable self-reflection rather than something to be dismissed.</p>
+            </div>
+          </div>
+
+          <div class="split-col-questions">
+            <h4 style="font-family:'Outfit',sans-serif; font-size:19px; font-weight:900; color:#0b1a30; margin-bottom:6px;">Available Sentences (A–G)</h4>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">A</div><div class="sentence-text">It describes a state where an individual retains awareness of dreaming during sleep, comparable to layered narratives seen in fiction.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">B</div><div class="sentence-text">Particularly distressing for parents are the intense frights that repeatedly wake their young children in panic.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">C</div><div class="sentence-text">Abrupt movement instantly disperses fragile cognitive recollections as morning practicalities flood attention.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">D</div><div class="sentence-text">Approximately half of the student cohort experienced related dreams, with one quarter producing viable solutions.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">E</div><div class="sentence-text">Because dream generation is intensely visual, picturing an evocative scene as slumber approaches fosters the intended theme.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">F</div><div class="sentence-text">Suppressing such persistent subconscious signals often intensifies their recurrence, making acute nightmares impossible to ignore.</div></div>
+            <div class="gapped-sentence-card"><div class="sentence-letter-badge">G</div><div class="sentence-text">Furthermore, repetitive waking rumination over distress is clinically correlated with fatigue and chronic stress.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 7 -->
+    <section class="stage-section" id="stage7">
+      <div class="cambridge-card">
+        <div class="part-tag-row">
+          <span class="part-title-tag">Part 7 • Multiple Matching (Questions 43–52)</span>
+          <span class="part-score-badge">10 Marks</span>
+        </div>
+        <div class="instruction-callout">
+          Read the accounts of four professionals on the left. In the column on the right, match questions <strong>43–52</strong> with the corresponding person (<strong>A–D</strong>).
+        </div>
+
+        <div class="parallel-split-grid">
+          <div class="split-col-reading">
+            <h3 class="passage-title">Approaches to Home Working</h3>
+            <div class="profile-card-p7"><h4>A • Petra Rosso (Creative Writer)</h4><p>Academic and artistic work demands strict mental isolation. I converted our spacious top-floor attic into a dedicated workroom. Natural illumination cascades across the desk, significantly aiding deep concentration when structuring complex manuscripts. The elevated outlook fosters creative ideas. Most crucially, closing the study door at the end of a session provides an unambiguous psychological boundary, allowing me to transition into domestic family life without residual academic anxiety.</p></div>
+            <div class="profile-card-p7" style="border-left-color:#f59e0b;"><h4>B • Jade Pickett (Culinary Specialist)</h4><p>Operating an artisanal food enterprise from a shared domestic property requires unwavering hygiene discipline. Our expansive kitchen must adhere rigorously to commercial statutory guidelines. I frequently create experimental dishes for housemates and visiting colleagues; the social ambiance of communal dining reinforces my professional creativity. Without such an inviting, well-proportioned workspace, my daily job satisfaction would be markedly diminished.</p></div>
+            <div class="profile-card-p7" style="border-left-color:#059669;"><h4>C • Kara Francis (Portrait Painter)</h4><p>Environmental lighting dictates visual accuracy in portraiture. While my permanent facility is undergoing renovation, I am temporarily stationed in our open living area. Expansive glass doors frame pastoral greenery, allowing natural light that rivals a professional studio setting. Clients sitting for portraits observe the landscape, which visibly induces relaxation, imbuing recent canvasses with distinctive composure and tranquility.</p></div>
+            <div class="profile-card-p7" style="border-left-color:#7c3aed;"><h4>D • Tina Tyford (Business Consultant)</h4><p>Establishing a high-output home enterprise began with empirical research into ergonomic workstations. Sedentary computer tasks generate postural strain, prompting me to commission customized support seating. Though the preliminary financial outlay was substantial, enhanced comfort yielded immediate gains in daily efficiency. Positioning primary devices within arm's reach and ensuring balanced illumination verified that investing in functional design was thoroughly justified.</p></div>
+          </div>
+
+          <div class="split-col-questions">
+            <div class="q-item-side"><div class="q-question-header">43. Which person emphasizes the necessity of conforming to official industry standards?</div><label class="radio-option"><input type="radio" name="q43" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q43" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q43" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q43" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">44. Which person recognizes the physical health hazards of prolonged sedentary work?</div><label class="radio-option"><input type="radio" name="q44" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q44" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q44" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q44" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">45. Which person draws a comparison between two specific workplaces?</div><label class="radio-option"><input type="radio" name="q45" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q45" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q45" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q45" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">46. Which person identifies a natural environmental feature that aids personal focus?</div><label class="radio-option"><input type="radio" name="q46" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q46" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q46" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q46" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">47. Which person doubts whether her work would remain as fulfilling in an alternative environment?</div><label class="radio-option"><input type="radio" name="q47" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q47" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q47" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q47" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">48. Which person values cultivating an appropriate mental frame before undertaking tasks?</div><label class="radio-option"><input type="radio" name="q48" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q48" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q48" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q48" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">49. Which person observes that her current environment visibly comforts others?</div><label class="radio-option"><input type="radio" name="q49" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q49" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q49" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q49" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">50. Which person enhanced her productivity by custom-tailoring workspace equipment?</div><label class="radio-option"><input type="radio" name="q50" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q50" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q50" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q50" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">51. Which person notes a tangible influence of the environment upon what she creates?</div><label class="radio-option"><input type="radio" name="q51" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q51" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q51" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q51" value="D"> D) Tina Tyford</label></div>
+            <div class="q-item-side"><div class="q-question-header">52. Which person appreciates being able to mentally disconnect upon ending the workday?</div><label class="radio-option"><input type="radio" name="q52" value="A"> A) Petra Rosso</label><label class="radio-option"><input type="radio" name="q52" value="B"> B) Jade Pickett</label><label class="radio-option"><input type="radio" name="q52" value="C"> C) Kara Francis</label><label class="radio-option"><input type="radio" name="q52" value="D"> D) Tina Tyford</label></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROLS -->
+    <div class="controls-bar">
+      <button type="button" class="btn-act btn-prev" id="btnPrevStage" style="display:none;" onclick="navigateStage(-1)">← Previous Part</button>
+      <div style="margin-left:auto; display:flex; gap:12px; flex-wrap:wrap;">
+        <button type="button" class="btn-act btn-next" id="btnNextStage" onclick="navigateStage(1)">Next Part ➔</button>
+        <button type="button" class="btn-act btn-submit-final" id="btnSubmitReading" style="display:none;" onclick="confirmSubmitReading()">🎯 Submit Reading &amp; Use of English (70 Marks) ➔</button>
+        <a href="./MOCK%2001%20-%20WRITING.html" id="btnNextWriting" class="btn-act btn-submit-final" style="display:none;">Proceed to Paper 2: Writing ➔</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- INSTITUTIONAL FOOTER -->
+  <footer class="exam-footer">
+    <div class="footer-left">© 2026 Cambridge Assessment Practice Engine</div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:26px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <!-- CONFIRM MODAL -->
+  <div class="modal-veil" id="modalConfirmSubmit">
+    <div class="modal-box" style="max-width:540px; text-align:center;">
+      <div style="font-size:44px; margin-bottom:10px;">⚠️</div>
+      <h3 style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:900; color:#0b1a30; margin-bottom:10px;">Finalize Reading &amp; Use of English?</h3>
+      <p style="font-size:15.5px; color:#334155; line-height:1.6; margin-bottom:24px;">
+        Once submitted, all answers across the 7 parts are locked and graded immediately before proceeding to Paper 2: Writing.
+      </p>
+      <div style="display:flex; justify-content:center; gap:14px;">
+        <button type="button" class="btn-act btn-prev" onclick="closeConfirmModal()">Keep Reviewing</button>
+        <button type="button" class="btn-act btn-submit-final" onclick="executeEvaluation()">Yes, Submit Paper 1 ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULT MODAL -->
+  <div class="modal-veil" id="modalScorecard">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #cbd5e1; padding-bottom:14px; margin-bottom:18px; flex-wrap:wrap; gap:10px;">
+        <h3 style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:900; color:#0b1a30;">Paper 1: Diagnostic Assessment &amp; Key Explanations</h3>
+        <a href="./MOCK%2001%20-%20WRITING.html" class="btn-act btn-submit-final" style="padding:10px 22px; font-size:14.5px;">Proceed to Paper 2: Writing ➔</a>
+      </div>
+
+      <div id="readingStatusBanner" class="status-verdict-banner"></div>
+      <div id="uoeStatusBanner" class="status-verdict-banner"></div>
+
+      <table class="scorecard-table">
+        <thead>
+          <tr><th colspan="4">READING DOMAIN (Parts 1, 5, 6, 7 • Pass Mark: 24/42)</th><th>TOTAL (42)</th></tr>
+          <tr><th>Part 1 (8)</th><th>Part 5 (12)</th><th>Part 6 (12)</th><th>Part 7 (10)</th><th>SCORE</th></tr>
+        </thead>
+        <tbody>
+          <tr><td id="m_p1">0/8</td><td id="m_p5">0/12</td><td id="m_p6">0/12</td><td id="m_p7">0/10</td><td id="m_readTotal">0/42</td></tr>
+        </tbody>
+      </table>
+
+      <table class="scorecard-table">
+        <thead>
+          <tr><th colspan="3">USE OF ENGLISH DOMAIN (Parts 2, 3, 4 • Pass Mark: 18/28)</th><th>TOTAL (28)</th></tr>
+          <tr><th>Part 2 (8)</th><th>Part 3 (8)</th><th>Part 4 (12)</th><th>SCORE</th></tr>
+        </thead>
+        <tbody>
+          <tr><td id="m_p2">0/8</td><td id="m_p3">0/8</td><td id="m_p4">0/12</td><td id="m_uoeTotal">0/28</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="font-family:'Outfit',sans-serif; font-size:19px; font-weight:900; color:#0b1a30; margin:20px 0 12px 0;">Item-by-Item Pedagogical Feedback</h4>
+      <div id="detailedFeedbackContainer"></div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:20px; flex-wrap:wrap; gap:10px;">
+        <button type="button" class="btn-act btn-prev" onclick="closeScorecardModal()">Close &amp; Review Answers</button>
+        <a href="./MOCK%2001%20-%20WRITING.html" class="btn-act btn-submit-final">Proceed to Paper 2: Writing ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "fce_trainer_b2_v1";
+    const MOCK_ID = 1;
+
+    const EXAM_DATABASE = {
+      q1: { key: "A", explain: "Collocation: 'regard ... as' is required by preposition 'as'. 'Consider' does not take 'as' in standard Cambridge English." },
+      q2: { key: "A", explain: "'Explanation' fits the context of accounting for why friends purchase identical items." },
+      q3: { key: "C", explain: "Collocation with preposition 'of': 'full of coincidences'. 'Crowded' takes 'with'." },
+      q4: { key: "A", explain: "Conjunction: 'given that' means 'taking into consideration that'." },
+      q5: { key: "C", explain: "Adjective followed by 'that'-clause: 'aware that the coincidence exists'." },
+      q6: { key: "D", explain: "Conditional conjunction: 'Unless your birthday is today...' (meaning 'if not')." },
+      q7: { key: "B", explain: "Fixed idiom: 'come into contact with someone'." },
+      q8: { key: "C", explain: "Collocation: 'brought to your attention'." },
+
+      q9: { key: ["AROUND", "ROUND"], explain: "Preposition of movement indicating cycling within an area: 'cycle around/round their community'." },
+      q10: { key: ["WHERE"], explain: "Relative pronoun denoting place: 'in regions where municipal recycling remains restricted'." },
+      q11: { key: ["RETURN", "EXCHANGE"], explain: "Fixed prepositional phrase: 'in return for' or 'in exchange for'." },
+      q12: { key: ["AGO"], explain: "Time adverb indicating past completion: 'started several years ago'." },
+      q13: { key: ["IN"], explain: "Dependent preposition: to 'invest in' something." },
+      q14: { key: ["WHEN", "AS", "WHILE", "AFTER"], explain: "Conjunction expressing concurrent or subsequent action while cycling around town." },
+      q15: { key: ["WHICH"], explain: "Non-defining relative pronoun referring back to the distinction." },
+      q16: { key: ["SAME"], explain: "Idiomatic discourse marker: 'at the same time'." },
+
+      q17: { key: ["PERFORMANCE"], explain: "Noun derived from PERFORM required after adjective 'operational'." },
+      q18: { key: ["VARIABILITY"], explain: "Noun derived from VARIABLE indicating unpredictable fluctuations." },
+      q19: { key: ["DEPENDABILITY", "DEPENDENCE"], explain: "Noun formed with suffix -ity/-ence indicating reliability." },
+      q20: { key: ["NOTICEABLY"], explain: "Adverb modifying adjective 'low': NOTICE + ABLE + Y." },
+      q21: { key: ["GROWTH"], explain: "Abstract noun derived from verb GROW." },
+      q22: { key: ["NECESSITY"], explain: "Noun formed from adjective NECESSARY." },
+      q23: { key: ["CONSIDERABLE"], explain: "Adjective meaning significant/substantial derived from CONSIDER." },
+      q24: { key: ["PROSPEROUS"], explain: "Adjective meaning thriving/wealthy: PROSPER + OUS." },
+
+      q25: { canonical: ["CAN'T HAVE KNOWN", "CANNOT HAVE KNOWN"], half: ["CAN'T HAVE", "CANNOT HAVE", "HAVE KNOWN"], explain: "Negative modal deduction in the past: can't + have + past participle." },
+      q26: { canonical: ["WISH I HAD CONSULTED", "WISH I'D CONSULTED"], half: ["WISH I HAD", "WISH I'D", "CONSULTED"], explain: "Past regret expressed using 'wish + past perfect'." },
+      q27: { canonical: ["ARE THOUGHT TO DATE"], half: ["ARE THOUGHT", "TO DATE"], explain: "Passive reporting verb with infinitive: 'are thought to date'." },
+      q28: { canonical: ["SUCH A SEVERE SNOWSTORM"], half: ["SUCH A", "SEVERE SNOWSTORM"], explain: "Result clause using 'such + a + adjective + singular countable noun'." },
+      q29: { canonical: ["HAVING HIS BAROMETER RESTORED", "HAVING THE BAROMETER RESTORED"], half: ["HAVING HIS BAROMETER", "RESTORED"], explain: "Causative structure: have + object + past participle." },
+      q30: { canonical: ["LONG AS YOU"], half: ["LONG AS", "AS YOU"], explain: "Conditional link: 'as long as you'." },
+
+      q31: { key: "C", explain: "Explicitly motivated by avoiding high student debt liabilities." },
+      q32: { key: "A", explain: "Jonathan wanted to sustain the career momentum and employment he had achieved." },
+      q33: { key: "D", explain: "'Peers' refers to fellow student learners of similar age and academic standing." },
+      q34: { key: "B", explain: "Jamie highlights that workplace integration alongside distance study made him more employable." },
+      q35: { key: "D", explain: "Dr Hallam stresses that candidates must fully comprehend the substantial commitment required." },
+      q36: { key: "B", explain: "Jonathan calls for broader guidance on alternative vocational and remote degree tracks." },
+
+      q37: { key: "E", explain: "Links logically to focusing on a subject prior to sleep through mental imagery." },
+      q38: { key: "C", explain: "Refers directly back to resisting the impulse to rise immediately upon waking." },
+      q39: { key: "G", explain: "Elaborates on conscious waking rumination over negative issues." },
+      q40: { key: "D", explain: "Refers directly to the participants in the university trial." },
+      q41: { key: "B", explain: "Introduces the discussion on nightmares affecting young children." },
+      q42: { key: "F", explain: "Continues the discussion on adult nightmares acting as a persistent subconscious signal." },
+
+      q43: { key: "B", explain: "Jade Pickett highlights adhering to commercial statutory guidelines." },
+      q44: { key: "D", explain: "Tina Tyford notes the postural strain caused by sedentary computer tasks." },
+      q45: { key: "C", explain: "Kara Francis compares her temporary home living area to a professional studio setting." },
+      q46: { key: "A", explain: "Petra Rosso mentions natural illumination aiding deep concentration." },
+      q47: { key: "B", explain: "Jade Pickett notes that without such a workspace, her daily job satisfaction would be diminished." },
+      q48: { key: "A", explain: "Petra Rosso emphasizes establishing an unambiguous psychological boundary." },
+      q49: { key: "C", explain: "Kara Francis notes the relaxing effect the landscape has on her portrait clients." },
+      q50: { key: "D", explain: "Tina Tyford commissioned customized support seating to boost daily efficiency." },
+      q51: { key: "C", explain: "Kara Francis points out that recent canvasses display distinctive composure and tranquility." },
+      q52: { key: "A", explain: "Petra Rosso appreciates closing the study door to transition into family life." }
+    };
+
+    function getSession() {
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        let initial = { firstName: "", lastName: "", studentName: "", unlockedBlocks: [1], blockScores: {} };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+        return initial;
+      }
+      return JSON.parse(raw);
+    }
+
+    function saveSession(session) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    let timeLeft = 75 * 60;
+    const timerDisplay = document.getElementById('readingTimer');
+    const timerInterval = setInterval(() => {
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerDisplay.textContent = "00:00";
+        executeEvaluation();
+        return;
+      }
+      timeLeft--;
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 1000);
+
+    let currentStage = 1;
+    function switchStage(stageNum) {
+      currentStage = stageNum;
+      for (let i = 1; i <= 7; i++) {
+        document.getElementById(`stage${i}`).classList.toggle('active', i === stageNum);
+        document.getElementById(`pill${i}`).classList.toggle('active', i === stageNum);
+      }
+      document.getElementById('btnPrevStage').style.display = (stageNum === 1) ? 'none' : 'inline-flex';
+      if (stageNum === 7) {
+        document.getElementById('btnNextStage').style.display = 'none';
+        document.getElementById('btnSubmitReading').style.display = 'inline-flex';
+      } else {
+        document.getElementById('btnNextStage').style.display = 'inline-flex';
+        document.getElementById('btnSubmitReading').style.display = 'none';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function navigateStage(dir) {
+      const target = currentStage + dir;
+      if (target >= 1 && target <= 7) switchStage(target);
+    }
+
+    function confirmSubmitReading() { document.getElementById('modalConfirmSubmit').classList.add('active'); }
+    function closeConfirmModal() { document.getElementById('modalConfirmSubmit').classList.remove('active'); }
+    function closeScorecardModal() { document.getElementById('modalScorecard').classList.remove('active'); }
+
+    function executeEvaluation() {
+      closeConfirmModal();
+      clearInterval(timerInterval);
+
+      document.querySelectorAll('input, select').forEach(el => el.disabled = true);
+
+      let s_p1 = 0, s_p2 = 0, s_p3 = 0, s_p4 = 0, s_p5 = 0, s_p6 = 0, s_p7 = 0;
+      let feedbackList = [];
+
+      for (let i = 1; i <= 8; i++) {
+        const val = document.getElementById(`q${i}`).value;
+        const correct = EXAM_DATABASE[`q${i}`].key;
+        if (val === correct) s_p1++;
+        feedbackList.push({ id: `Q${i} (Part 1)`, user: val || "Unanswered", key: correct, ok: val === correct, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      for (let i = 9; i <= 16; i++) {
+        const val = document.getElementById(`q${i}`).value.trim().toUpperCase();
+        const ok = EXAM_DATABASE[`q${i}`].key.includes(val);
+        if (ok) s_p2++;
+        feedbackList.push({ id: `Q${i} (Part 2)`, user: val || "Unanswered", key: EXAM_DATABASE[`q${i}`].key.join(" / "), ok, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      for (let i = 17; i <= 24; i++) {
+        const val = document.getElementById(`q${i}`).value.trim().toUpperCase();
+        const ok = EXAM_DATABASE[`q${i}`].key.includes(val);
+        if (ok) s_p3++;
+        feedbackList.push({ id: `Q${i} (Part 3)`, user: val || "Unanswered", key: EXAM_DATABASE[`q${i}`].key.join(" / "), ok, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      for (let i = 25; i <= 30; i++) {
+        const val = document.getElementById(`q${i}`).value.trim().toUpperCase().replace(/\s+/g, ' ');
+        const item = EXAM_DATABASE[`q${i}`];
+        let mark = 0;
+        if (item.canonical.some(c => val.includes(c))) mark = 2;
+        else if (item.half.some(h => val.includes(h))) mark = 1;
+        s_p4 += mark;
+        feedbackList.push({ id: `Q${i} (Part 4 - ${mark}/2 pts)`, user: val || "Unanswered", key: item.canonical[0], ok: mark === 2, exp: item.explain });
+      }
+
+      for (let i = 31; i <= 36; i++) {
+        const sel = document.querySelector(`input[name="q${i}"]:checked`);
+        const val = sel ? sel.value : "";
+        const correct = EXAM_DATABASE[`q${i}`].key;
+        if (val === correct) s_p5 += 2;
+        feedbackList.push({ id: `Q${i} (Part 5 - 2 pts)`, user: val || "Unanswered", key: correct, ok: val === correct, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      for (let i = 37; i <= 42; i++) {
+        const val = document.getElementById(`q${i}`).value;
+        const correct = EXAM_DATABASE[`q${i}`].key;
+        if (val === correct) s_p6 += 2;
+        feedbackList.push({ id: `Q${i} (Part 6 - 2 pts)`, user: val || "Unanswered", key: correct, ok: val === correct, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      for (let i = 43; i <= 52; i++) {
+        const sel = document.querySelector(`input[name="q${i}"]:checked`);
+        const val = sel ? sel.value : "";
+        const correct = EXAM_DATABASE[`q${i}`].key;
+        if (val === correct) s_p7++;
+        feedbackList.push({ id: `Q${i} (Part 7)`, user: val || "Unanswered", key: correct, ok: val === correct, exp: EXAM_DATABASE[`q${i}`].explain });
+      }
+
+      const readingScore = s_p1 + s_p5 + s_p6 + s_p7; // /42
+      const uoeScore = s_p2 + s_p3 + s_p4; // /28
+      const totalRUoE = readingScore + uoeScore; // /70
+
+      let session = getSession();
+      const today = new Date();
+      const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
+      if (!session.blockScores[MOCK_ID]) {
+        session.blockScores[MOCK_ID] = { readingScore: 0, writingScore: 0, listeningScore: 0, total: 0, completed: false, timestamp: formattedDate };
+      }
+      session.blockScores[MOCK_ID].readingScore = totalRUoE;
+      session.blockScores[MOCK_ID].readingBreakdown = { p1: s_p1, p2: s_p2, p3: s_p3, p4: s_p4, p5: s_p5, p6: s_p6, p7: s_p7 };
+      session.blockScores[MOCK_ID].timestamp = formattedDate;
+      saveSession(session);
+
+      document.getElementById('btnSubmitReading').style.display = 'none';
+      document.getElementById('btnNextWriting').style.display = 'inline-flex';
+
+      document.getElementById('m_p1').textContent = `${s_p1}/8`;
+      document.getElementById('m_p5').textContent = `${s_p5}/12`;
+      document.getElementById('m_p6').textContent = `${s_p6}/12`;
+      document.getElementById('m_p7').textContent = `${s_p7}/10`;
+      document.getElementById('m_readTotal').textContent = `${readingScore}/42`;
+
+      document.getElementById('m_p2').textContent = `${s_p2}/8`;
+      document.getElementById('m_p3').textContent = `${s_p3}/8`;
+      document.getElementById('m_p4').textContent = `${s_p4}/12`;
+      document.getElementById('m_uoeTotal').textContent = `${uoeScore}/28`;
+
+      const rBanner = document.getElementById('readingStatusBanner');
+      if (readingScore >= 24) {
+        rBanner.className = "status-verdict-banner passed";
+        rBanner.innerHTML = `
+          <div><h4 style="font-size:20px; color:var(--success); font-family:'Outfit',sans-serif; font-weight:900;">✓ READING: B2 PASSED</h4>
+          <p style="font-size:14.5px; color:#1e293b; margin-top:4px;">You achieved <strong>${readingScore} / 42</strong> marks (Threshold: 24).</p></div>
+          <div style="font-size:32px; font-weight:900; color:var(--success); font-family:'JetBrains Mono',monospace;">${readingScore}/42</div>
+        `;
+      } else {
+        rBanner.className = "status-verdict-banner failed";
+        rBanner.innerHTML = `
+          <div><h4 style="font-size:20px; color:var(--error); font-family:'Outfit',sans-serif; font-weight:900;">✗ READING: BELOW B2 THRESHOLD</h4>
+          <p style="font-size:14.5px; color:#1e293b; margin-top:4px;">Score: <strong>${readingScore} / 42</strong> (Minimum passing mark: 24).</p></div>
+          <div style="font-size:32px; font-weight:900; color:var(--error); font-family:'JetBrains Mono',monospace;">${readingScore}/42</div>
+        `;
+      }
+
+      const uBanner = document.getElementById('uoeStatusBanner');
+      if (uoeScore >= 18) {
+        uBanner.className = "status-verdict-banner passed";
+        uBanner.innerHTML = `
+          <div><h4 style="font-size:20px; color:var(--success); font-family:'Outfit',sans-serif; font-weight:900;">✓ USE OF ENGLISH: B2 PASSED</h4>
+          <p style="font-size:14.5px; color:#1e293b; margin-top:4px;">You achieved <strong>${uoeScore} / 28</strong> marks (Threshold: 18).</p></div>
+          <div style="font-size:32px; font-weight:900; color:var(--success); font-family:'JetBrains Mono',monospace;">${uoeScore}/28</div>
+        `;
+      } else {
+        uBanner.className = "status-verdict-banner failed";
+        uBanner.innerHTML = `
+          <div><h4 style="font-size:20px; color:var(--error); font-family:'Outfit',sans-serif; font-weight:900;">✗ USE OF ENGLISH: BELOW B2 THRESHOLD</h4>
+          <p style="font-size:14.5px; color:#1e293b; margin-top:4px;">Score: <strong>${uoeScore} / 28</strong> (Minimum passing mark: 18).</p></div>
+          <div style="font-size:32px; font-weight:900; color:var(--error); font-family:'JetBrains Mono',monospace;">${uoeScore}/28</div>
+        `;
+      }
+
+      const feedBox = document.getElementById('detailedFeedbackContainer');
+      feedBox.innerHTML = feedbackList.map(item => `
+        <div class="item-feedback-card" style="border-left-color: ${item.ok ? 'var(--success)' : 'var(--error)'};">
+          <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+            <strong style="color:#0f172a;">${item.id}</strong>
+            <span style="font-family:'JetBrains Mono',monospace; font-weight:800; color:${item.ok ? 'var(--success)' : 'var(--error)'};">
+              ${item.ok ? "✓ CORRECT" : "✗ INCORRECT"}
+            </span>
+          </div>
+          <p style="color:#334155; font-size:14px;">Your answer: <span style="color:#0f172a; font-weight:800;">${item.user}</span> | Key: <span style="color:#1d4ed8; font-weight:800;">${item.key}</span></p>
+          <p style="color:#475569; font-size:14px; margin-top:4px;">💡 <em>${item.exp}</em></p>
+        </div>
+      `).join('');
+
+      document.getElementById('modalScorecard').classList.add('active');
+    }
+  </script>
+</body>
+</html>

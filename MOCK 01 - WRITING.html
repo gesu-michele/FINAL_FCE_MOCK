@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge B2 First • Paper 2: Writing | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #1e3a8a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-purple: #7c3aed;
+      --cambridge-gold: #d97706;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image:
+        linear-gradient(rgba(15, 45, 95, 0.58), rgba(10, 32, 70, 0.68)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    /* INSTITUTIONAL HEADER */
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 52px; width: auto; object-fit: contain; }
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 72px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .header-center-cluster { display: flex; align-items: center; gap: 12px; }
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      border: 2.5px solid #3b82f6;
+      color: #93c5fd;
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-avatar-lg {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 12px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    /* STEPPER NAV */
+    .stepper-nav {
+      max-width: 1560px;
+      width: 96%;
+      margin: 18px auto 6px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(6, 21, 45, 0.92);
+      border: 2px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 12px 28px;
+      gap: 14px;
+    }
+    .step-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      color: #cbd5e1;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      transition: all 0.2s;
+    }
+    .step-pill.active {
+      color: #ffffff;
+      background: #2563eb;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+    }
+    .step-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .step-pill.active .step-badge {
+      background: #ffffff;
+      color: #1d4ed8;
+    }
+
+    main.writing-viewport {
+      flex: 1;
+      max-width: 1560px;
+      width: 96%;
+      margin: 14px auto 28px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .writing-section {
+      display: none;
+      grid-template-columns: 1.08fr 1.32fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .writing-section.active { display: grid; }
+    @media (max-width: 1120px) {
+      .writing-section { grid-template-columns: 1fr; }
+    }
+
+    .prompt-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .exam-main-title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 10px;
+    }
+    .exam-paper-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+    .exam-part-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .task-instruction-p {
+      font-size: 16px;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .notepad-container {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-left: 8px solid #059669;
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .notepad-topic {
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      color: #064e3b;
+      line-height: 1.4;
+      padding-bottom: 10px;
+      border-bottom: 2px dashed #a7f3d0;
+    }
+    .notepad-notes-header {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 900;
+      color: #047857;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .notepad-note-item {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .note-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      color: #1d4ed8;
+    }
+
+    .p2-options-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 768px) {
+      .p2-options-cards-grid { grid-template-columns: 1fr; }
+    }
+    .btn-option-card {
+      background: #f8fafc;
+      border: 2.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+    .btn-option-card:hover { border-color: #2563eb; transform: translateY(-2px); }
+    .btn-option-card.active-option {
+      border-color: #2563eb;
+      background: #eff6ff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+    }
+    .opt-card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: #2563eb;
+      text-transform: uppercase;
+    }
+    .opt-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+    .opt-card-desc {
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    /* EDITOR CARD */
+    .editor-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 26px 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .editor-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .editor-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+    .word-counter-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      background: #f1f5f9;
+      border: 2px solid #cbd5e1;
+      color: #475569;
+    }
+    .word-counter-badge.optimal { border-color: #059669; color: #065f46; background: #d1fae5; }
+    .word-counter-badge.warning { border-color: #d97706; color: #78350f; background: #fef3c7; }
+    .word-counter-badge.danger { border-color: #dc2626; color: #991b1b; background: #fee2e2; }
+
+    .writing-textarea {
+      width: 100%;
+      min-height: 450px;
+      background: #ffffff;
+      border: 2px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      color: var(--text-pure-black);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 17.5px;
+      font-weight: 500;
+      line-height: 1.8;
+      padding: 20px;
+      outline: none;
+      resize: vertical;
+    }
+    .writing-textarea:focus {
+      border-color: var(--cambridge-blue);
+      box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.16);
+    }
+
+    /* CONTROLS BAR */
+    .controls-bar {
+      max-width: 1560px;
+      width: 96%;
+      margin: 0 auto 28px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 20px 32px;
+      box-shadow: var(--shadow-card);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-act {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16.5px;
+      font-weight: 900;
+      padding: 14px 30px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-prev { background: #f1f5f9; border-color: #cbd5e1; color: #1e293b; }
+    .btn-prev:hover { background: #e2e8f0; }
+    .btn-next {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      border-color: #bfdbfe;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    }
+    .btn-submit-final {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      border-color: #6ee7b7;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    /* MODALS */
+    .modal-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(10px);
+      display: none;
+      place-items: center;
+      z-index: 500;
+      padding: 20px;
+    }
+    .modal-veil.active { display: grid; }
+    .modal-box {
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      border-radius: var(--radius-lg);
+      max-width: 960px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      padding: 34px 40px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+    }
+    .spinner-disc {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #dbeafe;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spinRound 0.9s infinite linear;
+      margin: 0 auto 14px auto;
+    }
+    @keyframes spinRound {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .score-banner-box {
+      background: linear-gradient(135deg, #091e3a 0%, #172554 100%);
+      color: #ffffff;
+      border: 2.5px solid #3b82f6;
+      border-radius: 14px;
+      padding: 22px;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    .big-score {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 44px;
+      font-weight: 900;
+      color: #fef08a;
+      margin: 6px 0;
+    }
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+    @media (max-width: 700px) {
+      .rubric-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .rubric-cell {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(147, 197, 253, 0.35);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .rubric-cell span { font-size: 11.5px; font-weight: 800; color: #93c5fd; display: block; text-transform: uppercase; }
+    .rubric-cell strong { font-family: 'JetBrains Mono', monospace; font-size: 18px; color: #ffffff; }
+    .diag-item {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-left: 5px solid #2563eb;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #1e293b;
+    }
+    .diag-item h5 { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 900; color: #0b1a30; margin-bottom: 6px; }
+
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 42px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INSTITUTIONAL HEADER -->
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center-cluster">
+      <div class="timer-pill"><span>⏱️</span><span id="writingTimer">80:00</span></div>
+    </div>
+
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu"><span>🏠</span> Return to Main Menu</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- STEP NAVIGATION -->
+  <div class="stepper-nav">
+    <div class="step-pill active" id="tabPart1" onclick="switchPart(1)">
+      <div class="step-badge">1</div>
+      <span>Part 1: Compulsory Essay (140–190 words)</span>
+    </div>
+    <div class="step-pill" id="tabPart2" onclick="switchPart(2)">
+      <div class="step-badge">2</div>
+      <span>Part 2: Choice Task (140–190 words)</span>
+    </div>
+  </div>
+
+  <!-- MAIN SPLIT VIEWPORT -->
+  <main class="writing-viewport">
+
+    <!-- PART 1 (ESSAY) -->
+    <section class="writing-section active" id="sectionPart1">
+      <div class="prompt-card">
+        <div class="exam-main-title-block">
+          <span class="exam-paper-heading">📝 B2 FIRST (FCE) WRITING</span>
+          <span class="exam-part-heading">Part 1 • Question 1 (Compulsory)</span>
+        </div>
+        <p class="task-instruction-p">
+          You <strong>must</strong> answer this question. Write your answer in <strong>140–190 words</strong> in an appropriate style.
+        </p>
+        <p class="task-instruction-p">
+          <strong>1.</strong> You have had a discussion in your English class about teaching materials for schools. Now your English teacher has asked you to write an essay using <strong>all the notes</strong> and give reasons for your point of view.
+        </p>
+
+        <div class="notepad-container">
+          <div class="notepad-topic">
+            Schools should spend more on computers and software than on textbooks. Do you agree?
+          </div>
+          <div class="notepad-notes-header">Notes • Write about:</div>
+          <div class="notepad-note-item"><span class="note-num">1.</span> which is better for education</div>
+          <div class="notepad-note-item"><span class="note-num">2.</span> which are more enjoyable to use</div>
+          <div class="notepad-note-item"><span class="note-num">3.</span> ............................................ (your own idea)</div>
+        </div>
+      </div>
+
+      <div class="editor-card">
+        <div class="editor-top-bar">
+          <span class="editor-title">Candidate Answer Sheet • Part 1 (Essay)</span>
+          <span class="word-counter-badge" id="wcPart1">0 words (Target: 140–190)</span>
+        </div>
+        <textarea
+          class="writing-textarea"
+          id="textPart1"
+          placeholder="Type your essay here (140–190 words). Address education, enjoyment, and your own third point with clear paragraphing..."
+          spellcheck="false"
+          oninput="updateWordCount(1)"
+        ></textarea>
+      </div>
+    </section>
+
+    <!-- PART 2 (CHOSEN OPTION) -->
+    <section class="writing-section" id="sectionPart2">
+      <div class="prompt-card">
+        <div class="exam-main-title-block">
+          <span class="exam-paper-heading">📝 B2 FIRST (FCE) WRITING</span>
+          <span class="exam-part-heading">Part 2 • Questions 2–4 (Choose ONE)</span>
+        </div>
+        <p class="task-instruction-p">
+          Write an answer to <strong>one</strong> of the questions <strong>2–4</strong> in this part. Write your answer in <strong>140–190 words</strong> in an appropriate style.
+        </p>
+
+        <div class="p2-options-cards-grid">
+          <button type="button" class="btn-option-card active-option" id="cardOpt2" onclick="selectP2Option(2)">
+            <span class="opt-card-label">Question 2</span>
+            <span class="opt-card-title">⭐ Review</span>
+            <span class="opt-card-desc">Holiday resort experience</span>
+          </button>
+          <button type="button" class="btn-option-card" id="cardOpt3" onclick="selectP2Option(3)">
+            <span class="opt-card-label">Question 3</span>
+            <span class="opt-card-title">📰 Article</span>
+            <span class="opt-card-desc">Person from history I admire</span>
+          </button>
+          <button type="button" class="btn-option-card" id="cardOpt4" onclick="selectP2Option(4)">
+            <span class="opt-card-label">Question 4</span>
+            <span class="opt-card-title">✉️ Email</span>
+            <span class="opt-card-desc">Replying to friend Lou</span>
+          </button>
+        </div>
+
+        <div id="p2PromptContainer"></div>
+      </div>
+
+      <div class="editor-card">
+        <div class="editor-top-bar">
+          <span class="editor-title" id="p2EditorTitle">Candidate Answer Sheet • Option 2 (Review)</span>
+          <span class="word-counter-badge" id="wcPart2">0 words (Target: 140–190)</span>
+        </div>
+        <textarea
+          class="writing-textarea"
+          id="textPart2"
+          placeholder="Click here and begin typing your selected Part 2 task (140–190 words)..."
+          spellcheck="false"
+          oninput="updateWordCount(2)"
+        ></textarea>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTROLS ROW -->
+  <div class="controls-bar">
+    <div>
+      <button type="button" class="btn-act btn-prev" id="btnPrevPart" style="display:none;" onclick="switchPart(1)">
+        ← Back to Part 1 (Essay)
+      </button>
+    </div>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <button type="button" class="btn-act btn-next" id="btnNextPart" onclick="switchPart(2)">
+        Continue to Part 2 ➔
+      </button>
+      <button type="button" class="btn-act btn-submit-final" id="btnSubmitFinal" style="display:none;" onclick="confirmSubmitWriting()">
+        🎯 Submit Final Writing (40 Marks) ➔
+      </button>
+      <a href="./MOCK%2001%20-%20LISTENING.html" id="btnNextListening" class="btn-act btn-submit-final" style="display:none;">
+        Proceed to Paper 3: Listening ➔
+      </a>
+    </div>
+  </div>
+
+  <!-- INSTITUTIONAL FOOTER -->
+  <footer class="exam-footer">
+    <div class="footer-left">© 2026 Cambridge Assessment Practice Engine</div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:26px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <!-- CONFIRM MODAL -->
+  <div class="modal-veil" id="modalConfirmSubmit">
+    <div class="modal-box" style="max-width:540px; text-align:center;">
+      <div style="font-size:44px; margin-bottom:10px;">⚠️</div>
+      <h3 style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:900; color:#0b1a30; margin-bottom:10px;">Finalize Paper 2: Writing?</h3>
+      <p style="font-size:15.5px; color:#334155; margin-bottom:24px; line-height:1.6;">
+        Once confirmed, your texts for <strong>Part 1</strong> and <strong>Part 2</strong> will be locked and graded against the official Cambridge B2 First Assessment Scale.
+      </p>
+      <div style="display:flex; justify-content:center; gap:14px;">
+        <button type="button" class="btn-act btn-prev" onclick="closeConfirmModal()">Keep Editing</button>
+        <button type="button" class="btn-act btn-submit-final" onclick="executeFullEvaluation()">Yes, Submit Final Writing ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WAITING MODAL -->
+  <div class="modal-veil" id="modalEvaluatingWait">
+    <div class="modal-box" style="max-width:540px; text-align:center;">
+      <div class="spinner-disc"></div>
+      <h3 style="font-family:'Outfit',sans-serif; font-size:23px; font-weight:900; color:#0b1a30; margin-bottom:8px;">🎓 Cambridge AI Examiner Evaluating...</h3>
+      <p style="font-size:15.5px; color:#334155; line-height:1.6;">
+        Please wait 10–15 seconds while your Part 1 Essay and Part 2 task are assessed across Content, Communicative Achievement, Organisation, and Language.
+      </p>
+    </div>
+  </div>
+
+  <!-- DIAGNOSTIC REPORT MODAL -->
+  <div class="modal-veil" id="modalReport">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #cbd5e1; padding-bottom:14px; margin-bottom:18px; flex-wrap:wrap; gap:10px;">
+        <h3 style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:900; color:#0b1a30;">Cambridge B2 First • Writing Diagnostic Report</h3>
+        <a href="./MOCK%2001%20-%20LISTENING.html" class="btn-act btn-submit-final" style="padding:10px 22px; font-size:14.5px;">Proceed to Paper 3: Listening ➔</a>
+      </div>
+
+      <div class="score-banner-box">
+        <span style="font-size:12.5px; font-weight:800; color:#93c5fd; text-transform:uppercase; letter-spacing:1px;">Consolidated Writing Score</span>
+        <div class="big-score" id="grandScoreDisplay">-- / 40</div>
+        <span id="passingVerdict" style="font-weight:800; font-size:15px;"></span>
+
+        <div class="rubric-grid">
+          <div class="rubric-cell"><span>Part 1 (Essay)</span><strong id="m_p1Score">--/20</strong></div>
+          <div class="rubric-cell"><span>Part 2 Task</span><strong id="m_p2Score">--/20</strong></div>
+          <div class="rubric-cell"><span>Min. Passing</span><strong>24 / 40</strong></div>
+          <div class="rubric-cell"><span>Standard</span><strong style="color:#fef08a;">CEFR B2</strong></div>
+        </div>
+      </div>
+
+      <div id="aiFeedbackDetails"></div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:18px; flex-wrap:wrap; gap:10px;">
+        <button type="button" class="btn-act btn-prev" onclick="closeReportModal()">Review Text on Screen</button>
+        <a href="./MOCK%2001%20-%20LISTENING.html" class="btn-act btn-submit-final">Proceed to Paper 3: Listening ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxijZHo5F3fE9VKpZHFWTbg1RDGCaURa3_HNRxeB-ZXGW0EeaqsKh-bg8inLcO8Af3YyQ/exec";
+    const STORAGE_KEY = "fce_trainer_b2_v1";
+    const MOCK_ID = 1;
+
+    function getSession() {
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        let initial = { firstName: "", lastName: "", studentName: "", unlockedBlocks: [1], blockScores: {} };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+        return initial;
+      }
+      return JSON.parse(raw);
+    }
+
+    function saveSession(session) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    let timeLeft = 80 * 60;
+    const timerDisplay = document.getElementById('writingTimer');
+    const timerInterval = setInterval(() => {
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerDisplay.textContent = "00:00";
+        executeFullEvaluation();
+        return;
+      }
+      timeLeft--;
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 1000);
+
+    const p2Texts = { 2: "", 3: "", 4: "" };
+
+    const P2_PROMPTS = {
+      2: {
+        type: "Review",
+        title: "Candidate Answer Sheet • Option 2 (Review)",
+        placeholder: "Write your review here (140–190 words). Describe the resort, mention what you enjoyed and disliked, and give your final recommendation...",
+        html: `
+          <div class="notepad-container">
+            <div style="font-size:12.5px; font-weight:800; color:#0284c7; text-transform:uppercase;">Announcement in a travel magazine:</div>
+            <div class="notepad-topic">Reviews of holiday resorts wanted</div>
+            <p style="font-size:15.5px; color:#1e293b; line-height:1.6;">
+              Write a review of a holiday resort you have stayed at. Describe the resort, saying what you enjoyed and did not enjoy about your stay there. Tell us whether you would recommend the resort to other people.
+            </p>
+            <div style="font-size:13.5px; font-style:italic; color:#475569;">We will publish the most interesting reviews in next month's edition.</div>
+          </div>
+        `
+      },
+      3: {
+        type: "Article",
+        title: "Candidate Answer Sheet • Option 3 (Article)",
+        placeholder: "Write your article here (140–190 words). Hook the reader, present the historical figure you admire, detail their deeds, and explain why they inspire you...",
+        html: `
+          <div class="notepad-container">
+            <div style="font-size:12.5px; font-weight:800; color:#0284c7; text-transform:uppercase;">English-language website announcement:</div>
+            <div class="notepad-topic">The person from history I most admire</div>
+            <p style="font-size:15.5px; color:#1e293b; line-height:1.6;">
+              • Who is the person from history that you most admire?<br>
+              • What did they do?<br>
+              • What do you particularly admire about them?
+            </p>
+          </div>
+        `
+      },
+      4: {
+        type: "Email",
+        title: "Candidate Answer Sheet • Option 4 (Email)",
+        placeholder: "Write your informal email to Lou (140–190 words). Address his questions about changes in your area over the last 20-30 years and recommend photogenic spots...",
+        html: `
+          <div class="notepad-container">
+            <div style="font-size:12.5px; font-weight:800; color:#0284c7; text-transform:uppercase;">Email from your English-speaking friend Lou:</div>
+            <div style="background:#ffffff; border:1.5px solid #cbd5e1; border-radius:8px; padding:14px; margin-top:4px; font-size:15px; color:#0f172a; line-height:1.6;">
+              <strong>From:</strong> Lou<br>
+              <strong>Subject:</strong> my visit<br><br>
+              I'm really looking forward to my first visit to your area and I'd very much like to find out more about it.<br><br>
+              Can you tell me in what ways it has changed in the last 20 or 30 years? What are the most interesting things I could photograph when I'm there?<br><br>
+              See you soon.<br>Lou
+            </div>
+          </div>
+        `
+      }
+    };
+
+    let activeP2Option = 2;
+
+    function selectP2Option(optId) {
+      const currentArea = document.getElementById('textPart2');
+      if (currentArea) p2Texts[activeP2Option] = currentArea.value;
+
+      activeP2Option = optId;
+
+      [2, 3, 4].forEach(id => {
+        const card = document.getElementById(`cardOpt${id}`);
+        if (card) card.classList.toggle('active-option', id === optId);
+      });
+
+      document.getElementById('p2PromptContainer').innerHTML = P2_PROMPTS[optId].html;
+      document.getElementById('p2EditorTitle').textContent = P2_PROMPTS[optId].title;
+
+      const editor = document.getElementById('textPart2');
+      editor.placeholder = P2_PROMPTS[optId].placeholder;
+      editor.value = p2Texts[optId] || "";
+      updateWordCount(2);
+    }
+
+    function switchPart(partNum) {
+      document.getElementById('sectionPart1').classList.toggle('active', partNum === 1);
+      document.getElementById('sectionPart2').classList.toggle('active', partNum === 2);
+
+      document.getElementById('tabPart1').classList.toggle('active', partNum === 1);
+      document.getElementById('tabPart2').classList.toggle('active', partNum === 2);
+
+      const btnPrev = document.getElementById('btnPrevPart');
+      const btnNext = document.getElementById('btnNextPart');
+      const btnSubmit = document.getElementById('btnSubmitFinal');
+
+      if (partNum === 1) {
+        btnPrev.style.display = 'none';
+        btnNext.style.display = 'inline-flex';
+        btnSubmit.style.display = 'none';
+      } else {
+        btnPrev.style.display = 'inline-flex';
+        btnNext.style.display = 'none';
+        btnSubmit.style.display = 'inline-flex';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateWordCount(part) {
+      const text = document.getElementById(part === 1 ? 'textPart1' : 'textPart2').value.trim();
+      const count = text ? text.split(/\s+/).filter(w => w.length > 0).length : 0;
+      const badge = document.getElementById(part === 1 ? 'wcPart1' : 'wcPart2');
+
+      badge.className = "word-counter-badge";
+      badge.textContent = `${count} words (Target: 140–190)`;
+
+      if (count >= 140 && count <= 190) badge.classList.add('optimal');
+      else if ((count >= 120 && count < 140) || (count > 190 && count <= 210)) badge.classList.add('warning');
+      else if (count > 0) badge.classList.add('danger');
+    }
+
+    function confirmSubmitWriting() { document.getElementById('modalConfirmSubmit').classList.add('active'); }
+    function closeConfirmModal() { document.getElementById('modalConfirmSubmit').classList.remove('active'); }
+
+    async function executeFullEvaluation() {
+      closeConfirmModal();
+      clearInterval(timerInterval);
+
+      const text1 = document.getElementById('textPart1').value.trim();
+      const text2 = document.getElementById('textPart2').value.trim();
+
+      document.getElementById('textPart1').readOnly = true;
+      document.getElementById('textPart2').readOnly = true;
+
+      const waitOverlay = document.getElementById('modalEvaluatingWait');
+      if (waitOverlay) waitOverlay.classList.add('active');
+
+      const evaluationPrompt = `
+You are a strict, authoritative Cambridge English B2 First (FCE) examiner.
+Evaluate the candidate's two writing tasks according to official Cambridge B2 First criteria (0 to 5 marks each across 4 subscales: Content, Communicative Achievement, Organisation, Language; max 20 marks per task, 40 marks total).
+
+CRITICAL RULES:
+- Target word count: 140–190 words per task. Grade strictly and honestly according to the B2 First scale.
+- All student-facing fields in part1, part2, and examinerSummary MUST be written in clear, authoritative ENGLISH.
+- ALSO include "spanishParentReport": a thorough, formal, empathetic diagnostic report in SPANISH (around 130–170 words) intended for parents and teachers explaining: (1) whether the student passed the B2 threshold (24/40), (2) performance across the 4 official Cambridge criteria (Contenido, Logro Comunicativo, Organización y Lenguaje) in both Part 1 (Essay) and Part 2 (${P2_PROMPTS[activeP2Option].type}), (3) key strengths, and (4) specific study recommendations.
+
+TASK 1 (Compulsory Essay):
+Topic: "Schools should spend more on computers and software than on textbooks. Do you agree?"
+Required notes: 1. which is better for education, 2. which are more enjoyable to use, 3. candidate's own idea.
+Candidate Essay Text:
+"""${text1 || "(No text provided)"}"""
+
+TASK 2 (Selected Option: ${P2_PROMPTS[activeP2Option].type}):
+Candidate Part 2 Text:
+"""${text2 || "(No text provided)"}"""
+
+Respond ONLY with a valid JSON object matching this schema (no markdown, no backticks):
+{
+  "part1": {
+    "score": 0,
+    "content": 0,
+    "commAch": 0,
+    "org": 0,
+    "lang": 0,
+    "spellingAndPunctuation": "Point out exact spelling/punctuation errors or confirm accuracy.",
+    "coherenceAndCohesion": "Critique paragraphs, logical transitions and flow.",
+    "taskFeedback": "Assess whether notes 1, 2 and 3 were genuinely addressed."
+  },
+  "part2": {
+    "score": 0,
+    "content": 0,
+    "commAch": 0,
+    "org": 0,
+    "lang": 0,
+    "spellingAndPunctuation": "Spelling and punctuation breakdown.",
+    "coherenceAndCohesion": "Coherence and paragraphing assessment.",
+    "taskFeedback": "Evaluate register and fulfillment of prompt points."
+  },
+  "grandTotal": 0,
+  "examinerSummary": "Diagnostic verdict in English with clear points for improvement.",
+  "spanishParentReport": "Informe pedagógico extenso en español para docentes y padres de familia detallando puntajes de rúbrica B2 First, fortalezas, errores detectados y sugerencias concretas."
+}
+`;
+
+      let res = null;
+      try {
+        const response = await fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            prompt: evaluationPrompt,
+            mockTitle: "B2 First Mock 01 - Writing",
+            p2Type: P2_PROMPTS[activeP2Option].type,
+            t1Text: text1 || "(Empty)",
+            t2Text: text2 || "(Empty)"
+          })
+        });
+
+        let rawText = (await response.text()).trim();
+        if (rawText.startsWith("```")) {
+          rawText = rawText.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
+        }
+        res = JSON.parse(rawText);
+        if (res.error) throw new Error(res.error);
+      } catch (err) {
+        if (waitOverlay) waitOverlay.classList.remove('active');
+        alert("SYSTEM DIAGNOSTIC:\n\n" + err.message);
+        return;
+      }
+
+      if (waitOverlay) waitOverlay.classList.remove('active');
+      renderReport(res, text1, text2);
+    }
+
+    function renderReport(res, rawText1, rawText2) {
+      const p1 = res.part1 || {};
+      const p2 = res.part2 || {};
+      const p1Score = Number(p1.score) || ((Number(p1.content) || 0) + (Number(p1.commAch) || 0) + (Number(p1.org) || 0) + (Number(p1.lang) || 0));
+      const p2Score = Number(p2.score) || ((Number(p2.content) || 0) + (Number(p2.commAch) || 0) + (Number(p2.org) || 0) + (Number(p2.lang) || 0));
+      const grandTotal = Number(res.grandTotal) || (p1Score + p2Score);
+
+      const spanishDiagnostic = (res.spanishParentReport && res.spanishParentReport.trim().length > 25)
+        ? `${res.spanishParentReport.trim()} | Desglose numérico: Part 1 Essay = ${p1Score}/20 (C:${p1.content || 0}, CA:${p1.commAch || 0}, O:${p1.org || 0}, L:${p1.lang || 0}) | Part 2 ${P2_PROMPTS[activeP2Option].type} = ${p2Score}/20 (C:${p2.content || 0}, CA:${p2.commAch || 0}, O:${p2.org || 0}, L:${p2.lang || 0}).`
+        : `Puntaje Total Writing: ${grandTotal}/40 (Mínimo oficial B2: 24/40 — ${grandTotal >= 24 ? "APROBADO" : "REQUIERE REFUERZO"}). Part 1 Essay: ${p1Score}/20 | Part 2 ${P2_PROMPTS[activeP2Option].type}: ${p2Score}/20. ${res.examinerSummary || ""}`;
+
+      let session = getSession();
+      const today = new Date();
+      const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
+      if (!session.blockScores[MOCK_ID]) {
+        session.blockScores[MOCK_ID] = { readingScore: 0, writingScore: 0, listeningScore: 0, total: 0, completed: false, timestamp: formattedDate };
+      }
+      session.blockScores[MOCK_ID].writingScore = grandTotal;
+      session.blockScores[MOCK_ID].writingBreakdown = {
+        part1: p1Score,
+        part2: p2Score,
+        p2Genre: P2_PROMPTS[activeP2Option].type,
+        text1: rawText1 || "(Sin texto)",
+        text2: rawText2 || "(Sin texto)",
+        spanishReport: spanishDiagnostic
+      };
+      session.blockScores[MOCK_ID].timestamp = formattedDate;
+      saveSession(session);
+
+      document.getElementById('btnSubmitFinal').style.display = 'none';
+      document.getElementById('btnNextListening').style.display = 'inline-flex';
+
+      document.getElementById('grandScoreDisplay').textContent = `${grandTotal} / 40`;
+      document.getElementById('m_p1Score').textContent = `${p1Score} / 20`;
+      document.getElementById('m_p2Score').textContent = `${p2Score} / 20`;
+
+      const verdict = document.getElementById('passingVerdict');
+      if (grandTotal >= 24) {
+        verdict.textContent = "✓ PASSED (B2 Standard Achieved)";
+        verdict.style.color = "#6ee7b7";
+      } else {
+        verdict.textContent = `✗ NOT ACHIEVED (${24 - grandTotal} marks below B2 threshold)`;
+        verdict.style.color = "#fca5a5";
+      }
+
+      document.getElementById('aiFeedbackDetails').innerHTML = `
+        <div class="diag-item">
+          <h5>Part 1 (Essay) • Diagnostic Breakdown (${p1Score}/20)</h5>
+          <p><strong>Spelling &amp; Punctuation:</strong> ${p1.spellingAndPunctuation || ""}</p>
+          <p style="margin-top:6px;"><strong>Cohesion &amp; Organization:</strong> ${p1.coherenceAndCohesion || ""}</p>
+          <p style="margin-top:6px;"><strong>Content &amp; Notes:</strong> ${p1.taskFeedback || ""}</p>
+        </div>
+
+        <div class="diag-item">
+          <h5>Part 2 (${P2_PROMPTS[activeP2Option].type}) • Diagnostic Breakdown (${p2Score}/20)</h5>
+          <p><strong>Spelling &amp; Punctuation:</strong> ${p2.spellingAndPunctuation || ""}</p>
+          <p style="margin-top:6px;"><strong>Cohesion &amp; Register:</strong> ${p2.coherenceAndCohesion || ""}</p>
+          <p style="margin-top:6px;"><strong>Task Fulfillment:</strong> ${p2.taskFeedback || ""}</p>
+        </div>
+
+        <div class="diag-item" style="border-left-color:#f59e0b; background:#fffbeb;">
+          <h5>Examiner's Concluding Assessment</h5>
+          <p>${res.examinerSummary || ""}</p>
+        </div>
+      `;
+
+      document.getElementById('modalReport').classList.add('active');
+    }
+
+    function closeReportModal() {
+      document.getElementById('modalReport').classList.remove('active');
+    }
+
+    selectP2Option(2);
+    switchPart(1);
+  </script>
+</body>
+</html>
